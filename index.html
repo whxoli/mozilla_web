@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="originals/firefox_logo-only_RGB.png">
+    <style>
+      /* header and body setup */
+
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      }
+
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+
+      /* Header styling */
+
+      header {
+        height: 150px;
+      }
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+
+      .maps{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mozilla</h1>
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
+      <img
+      class="iconmini"
+      src="originals/firefox_logo-only_RGB.png"
+      width="20px"
+      >
+      
+    </header>
+
+    <main>
+      <article>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/ojcNcvb1olg" title="Choose Independent - Choose Firefox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h2>Rocking the free web</h2>
+
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+      </article>
+
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+          <img
+          class="mozillalogo"
+          src="originals/firefox_logo-only_RGB.png"
+          width="180px">
+        </a>
+        <a href="https://www.mozilla.org/">
+          <img
+          class="dinovermelho"
+          src="originals/mozilla-dinosaur-head.png"
+          width="180px"
+          >
+        </a>
+        <a href="https://addons.mozilla.org/">
+          <img
+          class="mozilla desmontado"
+          src="originals/firefox-addons.jpg"
+          width="180px"
+          >
+        </a>
+        <a href="https://developer.mozilla.org/en-US/">
+          <img
+          class="mozillalogo"
+          src="originals/mdn.svg"
+          width="180px"
+          >
+        </a>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+        <!-- insert picture element -->
+        <img 
+        class="redpanda"
+        src="originals\red-panda.jpg"
+      >
+      </div>
+      <div>
+      
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593955.613923962!2d84.13015055000001!3d28.397454999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995e8c77d2e68cf%3A0x34a29abcd0cc86de!2sNepal!5e0!3m2!1spt-BR!2sbr!4v1710287851061!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <footer>
+          <p>
+            Todos os direitos reservados, porém depende
+          </p>
+        </footer>
+      </div>
+
+    </main>
+  </body>
+</html>
